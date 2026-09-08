@@ -1,0 +1,23 @@
+{
+  "name": "bayas_ui-playwright-framework-basic-ci",
+  "version": "1.0.0",
+  "description": "A lightweight UI testing framework built with Playwright and configured for continuous integration (CI) workflows.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SayabGarcesEsc/bayas_ui-playwright-framework-basic-ci.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SayabGarcesEsc/bayas_ui-playwright-framework-basic-ci/issues"
+  },
+  "homepage": "https://github.com/SayabGarcesEsc/bayas_ui-playwright-framework-basic-ci#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.4.1"
+  }
+}
