@@ -11,11 +11,11 @@ export class LoginPage {
   constructor(page: Page) {
     this.page = page;
     // Deep practice: Use accessible, text-based queries instead of fragile CSS/XPaths
-    this.usernameInput = page.getByRole('textbox', { name: /user|email/i });
+    this.usernameInput = page.getByRole('textbox', { name: /username/i });
     this.passwordInput = page.getByRole('textbox', { name: /password/i });
-    this.loginButton = page.getByRole('button', { name: /log in|submit/i });
-    this.errorMessage = page.locator('.alert-danger, [data-testid="error"]'); 
-    this.successHeader = page.getByRole('heading', { name: /dashboard|welcome/i });
+    this.loginButton = page.getByRole('button', { name: /login/i });
+    this.errorMessage = page.locator('.alert-danger, [id="flash"]'); 
+    this.successHeader = page.getByRole('heading', { name: /hi, practice!/i });
   }
 
   async navigate() {
@@ -34,6 +34,8 @@ export class LoginPage {
   }
 
   async isSuccessHeaderVisible(): Promise<boolean> {
+    //const headerText = await this.successHeader.innerText();
+    //console.log(headerText);
     return await this.successHeader.isVisible();
   }
 }
